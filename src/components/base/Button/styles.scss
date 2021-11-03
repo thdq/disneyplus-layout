@@ -1,6 +1,22 @@
 .base-button {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.2ch;
+  color: white;
+  font-size: 16px;
+
   &__flat {
     border: none;
     background: transparent;
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover {
+    background-size: 100% 2px, auto;
   }
 }
