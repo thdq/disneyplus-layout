@@ -1,3 +1,4 @@
+import "./global.scss"
 import { Navbar } from "./components/Navbar";
 
 const App = () => {
