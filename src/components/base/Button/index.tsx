@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "./styles.scss";
 
 type ButtonProps = {
   flat?: boolean;
@@ -6,7 +7,11 @@ type ButtonProps = {
 };
 
 const BaseButton = (props: ButtonProps) => {
-  return <button>{props.children}</button>;
+  return (
+    <button className={`base-button ${props.flat ? "base-button__flat" : ""}`}>
+      {props.children}
+    </button>
+  );
 };
 
 export { BaseButton };
