@@ -1,3 +1,4 @@
+import "./styles.scss";
 import { BaseButton } from "../base/Button";
 
 const Navbar = () => {
