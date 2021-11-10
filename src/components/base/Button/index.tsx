@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 import "./styles.scss";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  flat?: boolean
+  flat?: boolean;
 }
 
 const BaseButton = (props: ButtonProps) => {

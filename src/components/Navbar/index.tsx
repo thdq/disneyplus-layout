@@ -1,7 +1,19 @@
 import "./styles.scss";
 import { BaseButton } from "../base/Button";
+import { MouseEventHandler } from "react";
 
 const Navbar = () => {
+  const handleNavbarButton = (name: string): MouseEventHandler | undefined => {
+    dispatchEvent(
+      new CustomEvent("@disneyplus/event/focus-on-collection", {
+        detail: {
+          name,
+        },
+      })
+    );
+    return;
+  };
+
   return (
     <nav className="navbar__main">
       <div className="navbar__main__logo">
@@ -20,7 +32,7 @@ const Navbar = () => {
         <li>
           <BaseButton flat>Minha lista</BaseButton>
         </li>
-        <li>
+        <li onClick={() => handleNavbarButton("original")}>
           <BaseButton flat>Originais</BaseButton>
         </li>
         <li>
