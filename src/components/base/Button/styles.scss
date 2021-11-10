@@ -1,9 +1,9 @@
 .base-button {
   cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 0.2ch;
+  font-size: 13px;
+  letter-spacing: 1.42px;
+  padding-bottom: 4px;
   color: white;
-  font-size: 16px;
 
   &__flat {
     border: none;
@@ -13,7 +13,7 @@
     background-size: 0 2px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease 0s;
   }
 
   &:hover {

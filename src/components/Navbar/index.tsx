@@ -4,6 +4,12 @@ import { BaseButton } from "../base/Button";
 const Navbar = () => {
   return (
     <nav className="navbar__main">
+      <div className="navbar__main__logo">
+        <img
+          alt="logo"
+          src="https://disney-clone-d1e27.web.app/images/logo.svg"
+        />
+      </div>
       <ul>
         <li>
           <BaseButton flat>Ínicio</BaseButton>
