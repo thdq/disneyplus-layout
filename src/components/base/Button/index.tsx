@@ -1,10 +1,9 @@
 import { ReactNode } from "react";
-import "./styles.scss";
 
-type ButtonProps = {
-  flat?: boolean;
-  children: ReactNode;
-};
+import "./styles.scss";
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  flat?: boolean
+}
 
 const BaseButton = (props: ButtonProps) => {
   return (
